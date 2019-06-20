@@ -35,19 +35,30 @@ export default function BookList() {
         <input
           type="text"
           placeholder="Did you buy another book?"
-          value={tome}
+          value={tome.name}
           onChange={e => {
             SetTome(e.target.value)
           }}
         />
+        {/* <input
+          type="text"
+          placeholder="Who wrote this doorstop?"
+          value={tome}
+          onChange={e => {
+            SetTome(e.target.value)
+          }}
+        /> */}
         <button>+</button>
       </form>
       <ul>
         {tomeList.map(item => {
           return (
-            <li>
-              <p>{item.name}</p>
-            </li>
+            <BookItem
+              key={item.id}
+              id={item.id}
+              book={item.name}
+              isCompleted={item.isCompleted}
+            />
           )
         })}
       </ul>
