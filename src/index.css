@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
 :root {
-  font: 16px / 1 sans-serif;
+  font: 24px / 1 sans-serif;
+  font-family: 'Indie Flower', cursive;
 }
 
 html {
@@ -9,4 +12,80 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background: url('./images/patrick-tomasso-71909-unsplash.jpg');
+}
+
+header {
+  font-size: 3rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #26f0f1;
+}
+
+.completed > .item-text {
+  text-decoration: line-through;
+}
+
+form {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+ul > li {
+  width: 35%;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  border: 5px grey outset;
+  background-color: #86a5d9;
+}
+
+ul > li p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.item-text {
+  margin-bottom: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button-container button {
+  margin: 0.25rem;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #26f0f1;
+  color: #202a25;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
