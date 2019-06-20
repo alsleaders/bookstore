@@ -31,23 +31,27 @@ export default function BookList() {
 
   return (
     <section class="content">
-      <form onSubmit={addBookToList}>
-        <input
-          type="text"
-          placeholder="Did you buy another book?"
-          value={tome.name}
-          onChange={e => {
-            SetTome(e.target.value)
-          }}
-        />
-        {/* <input
-          type="text"
-          placeholder="Who wrote this doorstop?"
-          value={tome}
-          onChange={e => {
-            SetTome(e.target.value)
-          }}
-        /> */}
+      <form class="form-center" onSubmit={addBookToList}>
+        <div>
+          <input
+            type="text"
+            placeholder="Did you buy another book?"
+            value={tome.name}
+            onChange={e => {
+              SetTome(e.target.value)
+            }}
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            placeholder="Who wrote this doorstop?"
+            value={tome}
+            onChange={e => {
+              SetTome(e.target.value)
+            }}
+          />
+        </div>
         <button>+</button>
       </form>
       <ul>

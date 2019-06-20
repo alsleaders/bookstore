@@ -11,7 +11,7 @@ export default function BookItem(props) {
     setIsCompleted(oldIsCompleted => !oldIsCompleted)
     axios
       .put(`${MY_API}/items/${props.book}`, {
-        completed: !isCompleted,
+        completed: isCompleted,
         name: props.book
       })
       .then(resp => {

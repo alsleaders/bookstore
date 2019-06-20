@@ -24,7 +24,8 @@ header {
 
 h1 {
   text-align: center;
-  color: #26f0f1;
+  /* color: #26f0f1; */
+  color: #f8f7ff;
 }
 
 .completed > .item-text {
@@ -88,4 +89,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.form-center div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
 }
