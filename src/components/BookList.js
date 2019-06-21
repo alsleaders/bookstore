@@ -42,16 +42,16 @@ export default function BookList() {
             }}
           />
         </div>
-        <div>
+        {/* <div>
           <input
             type="text"
             placeholder="Who wrote this doorstop?"
-            value={tome}
+            value={tome.}
             onChange={e => {
               SetTome(e.target.value)
             }}
           />
-        </div>
+        </div> */}
         <button>+</button>
       </form>
       <ul>
